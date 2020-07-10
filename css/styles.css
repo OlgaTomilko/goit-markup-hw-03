@@ -8,11 +8,32 @@
   --accent-color: #2196f3;
   --logo-color: #000000;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #ffffff;
   font-family: var(--main-font);
   font-size: 14px;
   color: var(--text-dark-color);
+}
+
+h1 {
+  margin: 0;
+}
+
+img {
+  display: block;
 }
 
 .header-address,
@@ -22,6 +43,7 @@ body {
 
 .link {
   text-decoration: none;
+  display: block;
 }
 
 .list {
@@ -29,6 +51,50 @@ body {
 }
 
 /* ШАПКА САЙТА */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo-first-word {
+  margin-right: 85px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-address-list {
+  display: flex;
+}
+.header .header-mail-link {
+  margin-right: 50px;
+}
+
+.navigation-list-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .logo-first-word,
 .logo-second-word {
   font-family: var(--secondary-font);
@@ -73,6 +139,12 @@ body {
 }
 
 /* СЕКЦИЯ ГЕРОЙ */
+
+.hero-title {
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -84,19 +156,45 @@ body {
 }
 
 .order-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 200px;
+}
+
+.order-button {
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--title-light-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
 }
 
 /* СЕКЦИЯ О НАС */
+
+.about-us-list {
+  display: flex;
+}
+
+.about-us-list-item:not(:last-child) {
+  margin-right: 30 px;
+}
+
+.about-us-titles {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about-us-texts {
+  padding-bottom: 94px;
+}
+
 .about-us-titles {
   font-weight: 700;
   font-size: 14px;
@@ -127,6 +225,23 @@ body {
 }
 
 /* СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ */
+
+.what-we-do-title {
+  margin-bottom: 50px;
+}
+
+.our-doing-list {
+  display: flex;
+}
+
+.our-doing-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-doing-list-item {
+  padding-bottom: 94px;
+}
+
 .our-doing-texts {
   font-weight: 700;
   line-height: 1.14;
@@ -137,6 +252,43 @@ body {
 }
 
 /* СЕКЦИЯ О КОМАНДЕ */
+
+.command {
+  background: #f5f4fa;
+}
+
+.team-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-names-titles {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.team-list .social-links-item {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.social-links-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .team-names-titles {
   font-weight: 500;
   font-size: 16px;
@@ -152,14 +304,61 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* НАШИ КЛИЕНТЫ */
+
+.clients-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-list-items:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* ПОДВАЛ */
+
+.footer .container {
+  display: flex;
+}
 
 .footer {
   background: #2f303a;
 }
 
+.footer-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo-first-word {
+  margin-bottom: 20px;
+}
+
+.footer-address-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer .logo-first-word {
   color: var(--title-light-color);
+}
+
+.call {
+  margin-bottom: 20px;
 }
 
 .call {
@@ -181,12 +380,53 @@ body {
 
 /* СТРАНИЦА ПОРТФОЛИО */
 
+.filter-list {
+  display: flex;
+}
+
+/* .filter-list-items {
+  justify-content: center;
+} */
+
+.filter-list-button {
+  margin-right: 8px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-list-items {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.gallery-list-items:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery-list-titles {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.gallery-list-description {
+  margin-bottom: 20px;
+}
+
+.gallery {
+  padding-bottom: 94px;
+}
+
 .filter-list-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border-radius: 4px;
   color: var(--title-dark-color);
 }
 
