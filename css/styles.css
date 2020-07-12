@@ -345,6 +345,7 @@ img {
 
 .footer-logo-address {
   margin-right: 69px;
+  padding-top: 60px;
 }
 
 .footer .logo-first-word {
@@ -357,6 +358,10 @@ img {
 
 .footer .logo-first-word {
   color: var(--title-light-color);
+}
+
+.footer-call {
+  padding-top: 72px;
 }
 
 .call {
@@ -420,10 +425,14 @@ img {
 .gallery-list-titles {
   margin-top: 20px;
   margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .gallery-list-description {
   margin-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .gallery {
@@ -464,6 +473,9 @@ img {
 }
 
 .gallery-list-text {
+  padding-left: 24px;
+  padding-right: 24px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
