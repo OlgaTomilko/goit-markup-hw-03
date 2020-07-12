@@ -338,14 +338,10 @@ img {
   background: #2f303a;
 }
 
-.footer-content {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .footer-logo-address {
   margin-right: 69px;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo-first-word {
