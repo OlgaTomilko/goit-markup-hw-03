@@ -50,6 +50,10 @@ img {
   list-style: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* ШАПКА САЙТА */
 
 .container {
@@ -183,8 +187,6 @@ img {
 
 .about-us-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .about-us-list-item:not(:last-child) {
@@ -227,13 +229,15 @@ img {
 
 /* СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
+.what-we-do {
+  padding-bottom: 94px;
+}
 .what-we-do-title {
   margin-bottom: 50px;
 }
 
 .our-doing-list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .our-doing-list-item:not(:last-child) {
@@ -256,13 +260,11 @@ img {
 }
 
 .team-title {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
 .team-list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .team-list-item:not(:last-child) {
@@ -305,13 +307,11 @@ img {
 /* НАШИ КЛИЕНТЫ */
 
 .clients-title {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
 .clients-list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .clients-link {
@@ -386,8 +386,7 @@ img {
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
-  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .filter-list-button {
@@ -395,6 +394,10 @@ img {
   margin-right: 8px;
 
   border: none;
+}
+
+.gallery-img {
+  width: 100%;
 }
 
 .gallery-list {
@@ -418,21 +421,12 @@ img {
   margin-bottom: 0;
 }
 
+.gallery-list-subcontainer {
+  padding: 20px 24px;
+}
+
 .gallery-list-titles {
-  margin-top: 20px;
   margin-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.gallery-list-description {
-  margin-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.gallery {
-  padding-bottom: 94px;
 }
 
 .filter-list-button {
@@ -470,8 +464,7 @@ img {
 }
 
 .gallery-list-text {
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 24px 63px;
 
   font-weight: 400;
   font-size: 18px;
