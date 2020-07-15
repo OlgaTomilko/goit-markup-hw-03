@@ -32,8 +32,14 @@ h1 {
   margin: 0;
 }
 
+/* img {
+  display: block;
+} */
+
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .header-address,
@@ -153,12 +159,14 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: var(--title-light-color); */
+  color: var(--title-light-color);
 }
 
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background: rgba(47, 48, 58, 0.8);
 }
 
 .order-button {
@@ -250,7 +258,10 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* color: var(--title-light-color); */
+  color: var(--title-light-color);
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 /* СЕКЦИЯ О КОМАНДЕ */
@@ -265,6 +276,15 @@ img {
 
 .team-list {
   display: flex;
+}
+
+.team-list-item {
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item:not(:last-child) {
@@ -396,9 +416,9 @@ img {
   border: none;
 }
 
-.gallery-img {
+/* .gallery-img {
   width: 100%;
-}
+} */
 
 .gallery-list {
   display: flex;
@@ -410,7 +430,7 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
 }
 
 .gallery-list-items:nth-child(3n) {
@@ -423,6 +443,9 @@ img {
 
 .gallery-list-subcontainer {
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .gallery-list-titles {
@@ -470,5 +493,6 @@ img {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  /* color: var(--title-light-color); */
+  color: var(--title-light-color);
+  background: rgba(33, 150, 243, 0.9);
 }
